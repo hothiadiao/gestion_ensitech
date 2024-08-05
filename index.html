@@ -4,119 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau de bord Ensitech</title>
+    <title>Connexion</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="d-flex" id="wrapper">
-        <!--Sidebar starts here-->
-        <div class="bg-primary" id="sidebar-wrapper">
-        <div class="sidebar-heading text-center py-4 primary-text  fs-4 fw-bold text-uppercase">
-                <i><div class="fas fa-users me-2">Ensitech</i>
-                </div>
-                <div class="list-group list-group-flush my-3">
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-home me-2"></i>ACCUEIL
-                </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-graduation-cap me-2"></i>Espace étudiants
-                </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-address-book me-2"></i>Espace Enseignants
-                </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-briefcase me-2"></i>Espace Pédagogique
-                </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-calculator me-2"></i>Comptabilité
-                </a>
-                <a href="" class="list-group-item list-group-item-action bg-transparent second-text fw-bold">
-                    <i class="fas fa-folder-open me-2"></i>Adminis<br/>tration
-                </a>
-                </div>
-        </div>
-        </div>   
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-lg navbar-light bg-secondary py-4 px-4">
-                <div class="d-flex align-items-center">
-                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"> </i>
-                    <h2 class="fs-2 m-0 ">Tableau de bord</h2>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="Collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="Collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item-dropdown">
-                        <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown" role="button"
-                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-user me-2"></i>Urelle Tchambou
+<body class="bg-secondary">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 bg-white m-auto rounded-top">
+                    <h2 class="text-center">ENSITECH</h2>
+                    <p class="text-center text-muted lead"><i class="fa fa-graduation-cap " style="width:10px"></i></p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text "><i class="fa fa-envelope"></i></span>
+                            <input type="text" class="form-control border border-primary rounded" placeholder="E-mail">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            <input type="text" class="form-control border border-primary rounded" placeholder="Mot de passe">
+                        </div>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary bg-light"><a href="tableauBord.html">Se Connecter</a></button>
+                            <p class="text-center">
+                               Vous n'avez-vous pas de compte ? <a href="inscription.html">S'inscrire</a>
+                            </p>
+                        </div>
+                        <!--
+                        <div class="social-media text-center">
+                            <a href="tableauBord.html"  class="social-icon">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="tableauBord.html" class="social-icon">
+                            <i class="fab fa-google"></i>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a href="#" class="dropdown-item">Profile</a></li>
-                            <li><a href="#" class="dropdown-item">Paramétres</a></li>
-                            <li><a href="#" class="dropdown-item">Se déconnecter</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            </nav>
-            <div class="container-fluid  px-4 bg-secondary">
-                <div class="row g-3 my-2 ">
-                    <div class="col-md-3">
-                        <div class="p-3  bg-primary shadow-sm d-flex justify-content-around align-items-center rounded">
-                          <!--<i class="fas fa fa-graduation-cap me-2 primary-text secondary-bg p-3"></i>--> 
-                          <i class="fas fa-graduation-cap me-2 secondary-bg"></i>  
-                          <div>
-                            <h3 class="fs-3">Etudiant</h3>
-                            </div>
+                            <a href="tableauBord.html" class="social-icon ">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="tableauBord.html" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="p-3  bg-primary shadow-sm d-flex justify-content-around align-items-center rounded">
-                          <!--<i class="fas fa fa-graduation-cap me-2 primary-text secondary-bg p-3"></i>--> 
-                          <i class="fas fa-address-book  me-2 secondary-bg"></i>  
-                          <div>
-                                <h3 class="fs-3">Enseignant</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="p-3  bg-primary shadow-sm d-flex justify-content-around align-items-center rounded">
-                          <!--<i class="fas fa fa-graduation-cap me-2 primary-text secondary-bg p-3"></i>--> 
-                          <i class="fas fa-briefcase  me-2 secondary-bg"></i>  
-                          <div>
-                                <h3 class="fs-3">Pédagogique</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 text-bg-primary">
-                        <div class="p-3  bg-primary shadow-sm d-flex justify-content-around align-items-center  rounded">
-                          <!--<i class="fas fa fa-graduation-cap me-2 primary-text secondary-bg p-3"></i>--> 
-                          <i class="fas fa-calculator  me-2 secondary-bg"></i>  
-                          <div>
-                                <h3 class="fs-3">Comptabilité</h3>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-        <div class="row g-3 my-2">
-        <div class="col-md-4 text-bg-primary">
-            <div class="p-3  bg-primary shadow-sm d-flex justify-content-around align-items-center  rounded">
-              <!--<i class="fas fa fa-graduation-cap me-2 primary-text secondary-bg p-3"></i>--> 
-              <i class="fas fa-folder-open  me-2 secondary-bg"></i>  
-              <div>
-                    <h3 class="fs-3">Administration</h3>
+                        -->
+                    </form>
                 </div>
-            </div>
+          </div>
         </div>
-
-    </div>
-</div>
-    
 </body>
 </html>
 <script src="bootstrap.bundle.js"></script>
